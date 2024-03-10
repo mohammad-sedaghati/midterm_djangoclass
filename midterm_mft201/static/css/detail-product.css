@@ -1,0 +1,17 @@
+.detail-base {
+    width: 98%;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px #6f108f solid;
+}
+.product_image {
+    width: 290px;
+    height: 240px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.text-color {
+    color: red;
+}

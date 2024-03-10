@@ -1,0 +1,22 @@
+.banners {
+    height: 450px;
+}
+.circle-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: black solid 1px;
+}
+.border-card:hover {
+    border: red solid 2px;
+}
+a{
+    text-decoration: none;
+}
+.url-a{
+    text-decoration: none;
+}
+.django-icon{
+    width: 45px;
+    height: 45px;
+}
