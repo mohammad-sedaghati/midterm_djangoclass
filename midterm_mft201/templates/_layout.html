@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/uikit.min.css">
+    <link rel="stylesheet" href="../static/css/uikit-rtl.min.css">
+    <link rel="stylesheet" href="../static/css/navbar_footer.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    {% block css_refrence %}
+
+    {% endblock %}
+    <title>test shop |
+        {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+<body>
+<nav>
+    <div class="header-top fixed-top bg-white">
+        <div class="header-top-left">
+            <a href="#" class="link-cart">
+                <img src="../static/images/Cart.png" alt="cart" class="cart">
+            </a>
+            <div class="log">
+                <a href="#">ثبت نام</a>
+                |
+                <a href="#">ورود</a>
+            </div>
+        </div>
+        <div class="header-top-right">
+            <form action="">
+                <input type="search" class="search-box" placeholder="محصول، برند یا دسته مورد نظرتان را جستجو کنید">
+            </form>
+            <img src="../static/images/Search_icon.png" alt="search" class="search">
+            <p class="arm-text">test shop</p>
+            <img class="arm" src="../static/images/shop_icon.png" alt="tecnolife">
+        </div>
+    </div>
+    <div class="hidden-header">
+    </div>
+    <div class="uk-container bg-container">
+        <div uk-navbar>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">دسته بندی محصولات</a>
+                        <div class="uk-width-1-2@s uk-width-2-5@m uk-navbar-dropdown">
+                            <ul class="uk-nav-default" uk-nav>
+                                <li class="uk-parent">
+                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                    <ul class="uk-nav-sub mx-3">
+                                        <li><a href="#">Sub item</a></li>
+                                        <li>
+                                            <a href="#">Sub item</a>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                    <ul class="uk-nav-sub mx-3">
+                                        <li><a href="#">Sub item</a></li>
+                                        <li><a href="#">Sub item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="{% url 'home_page' %}">خانه</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+{% block script_refrence %}
+
+{% endblock %}
+
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/uikit.js"></script>
+<script src="../static/js/uikit-icons.js"></script>
+</body>
+</html>
