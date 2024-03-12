@@ -1,7 +1,16 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(../fonts/Vazir-Regular.ttf);
+}
 *{
-    margin: 0;
-    padding: 0;
+    font-family: "Vazir";
+    margin:0;
+    padding:0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 .hidden-header{
     height: 60px;
@@ -14,10 +23,6 @@ header{
     width: 100%;
     height: 170px;
     background-color: white;
-}
-.gif-banner{
-    width: 100%;
-    height: 40px;
 }
 .header-top{
     height: 80px;
@@ -51,7 +56,6 @@ form{
     height: 50px;
     border-radius: 10px;
     background-color: rgb(240, 240, 240);
-    border: white;
     padding: 10px;
 }
 .header-top-left{
@@ -60,63 +64,21 @@ form{
     justify-content: left;
     align-items: center;
 }
-.link-cart{
-    cursor: pointer;
-}
 .cart{
     width: 35px;
     height: 35px;
     margin: 0 20px;
 }
-.log{
-    width: 150px;
-    height: 35px;
-    border: 1px solid rgb(183, 119, 22);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer-li-part{
+    font-family: 'Vazir';
+    color: #949494;
 }
-.log a{
+.a-header{
+    width: 40px;
+    height: 15px;
     text-decoration: none;
     font-size: 15px;
-    margin: 0 8px;
     color: rgb(40, 40, 40);
-}
-.loga{
-    padding-left: 13px;
-    border-left: 1px solid rgb(40, 40, 40);
-}
-.header-bottom{
-    height: 50px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-.another-li{
-    list-style: none;
-    display: inline;
-    margin-right: 20px;
-    color: rgb(70, 70, 70);
-}
-.diffrent-li{
-    list-style: none;
-    display: inline;
-    margin-right: 20px;
-    color: rgb(0, 103, 214);
-    padding-right: 30px;
-    border-right: 1px solid rgb(150, 150, 150);
-}
-.header-bottom a{
-    text-decoration: none;
-}
-.content{
-    display: block;
-    justify-content: center;
-}
-.banner{
-    width: 100%;
-    height: 300px;
 }
 .circle-box{
     height: 230px;
@@ -146,12 +108,7 @@ form{
     width: 120px;
     height: 120px;
 }
-.circle-text-style{
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(30, 30, 30);
-}
-.tecno-off{
+.off-box{
     width: 97%;
     height: 500px;
     border: 4px solid rgb(255, 71, 71);
@@ -159,49 +116,13 @@ form{
     padding: 15px;
     margin: 10px auto;
 }
-.tecno-off-banner{
-    width: 100%;
-    height: 55px;
-}
-.tecno-off-box{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.tecno-off-part{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 350px;
-    margin: 50px;
-}
-.tecno-off-part img{
-    width: 200px;
-    height: 200px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-.tecno-off-part a{
-    text-decoration: none;
-    color: rgb(50, 50, 50);
-}
-.red-line-technooff{
-    width: 100%;
-    background-color: rgb(255, 71, 71);
-    height: 4px;
-    border-radius: 5px;
-}
 .center-banner{
     width: 100%;
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 70px 0px;
+    margin: 70px 0;
 }
 .center-banner-part img{
     width: 380px;
@@ -209,32 +130,18 @@ form{
     margin: 40px 20px;
     border-radius: 20px;
 }
-.top-phone-brand-text-div{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.top-phone-brand-text{
-    color: rgb(40, 40, 40);
-}
-.top-phone-brand-div{
+.top-product-brand-div{
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.top-phone-brand p{
+.top-product-brand p{
     text-align: center;
 }
-.top-phone-brand img{
+.top-product-brand img{
     margin: 0 10px;
     width: 180px;
-    height: 180px;
-}
-.printer-banner-center{
-    width: 100%;
     height: 180px;
 }

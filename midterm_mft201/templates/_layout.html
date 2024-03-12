@@ -5,10 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../static/css/uikit.min.css">
-    <link rel="stylesheet" href="../static/css/uikit-rtl.min.css">
     <link rel="stylesheet" href="../static/css/navbar_footer.css">
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/uikit.min.css">
+    <link rel="stylesheet" href="../static/css/uikit-rtl.min.css">
     {% block css_refrence %}
 
     {% endblock %}
@@ -22,13 +22,24 @@
 <nav>
     <div class="header-top fixed-top bg-white">
         <div class="header-top-left">
-            <a href="#" class="link-cart">
-                <img src="../static/images/Cart.png" alt="cart" class="cart">
-            </a>
-            <div class="log">
-                <a href="#">ثبت نام</a>
-                |
-                <a href="#">ورود</a>
+            <div class="d-flex justify-content-center align-items-center">
+                <ul class="uk-nav uk-nav-default d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="#" class="a-header mx-4">
+                            <img src="../static/images/Cart.png" alt="cart" class="cart">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="a-header mx-4">
+                            <img src="../static/images/login.png" alt="login">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="a-header">
+                            <img src="../static/images/member.png" alt="member">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="header-top-right">
@@ -36,7 +47,7 @@
                 <input type="search" class="search-box" placeholder="محصول، برند یا دسته مورد نظرتان را جستجو کنید">
             </form>
             <img src="../static/images/Search_icon.png" alt="search" class="search">
-            <p class="arm-text">test shop</p>
+            <p class="m-4">test shop</p>
             <img class="arm" src="../static/images/shop_icon.png" alt="tecnolife">
         </div>
     </div>
@@ -47,15 +58,28 @@
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <li>
-                        <a href="#">دسته بندی محصولات</a>
-                        <div class="uk-width-1-2@s uk-width-2-5@m uk-navbar-dropdown">
+                        <a href="#">سوالات ✉</a>
+                    </li>
+                    <li>
+                        <a href="#">هدیه ها 🎁</a>
+                    </li>
+                    <li>
+                        <a href="#">وضعیت ارسال 🚚</a>
+                    </li>
+                    <li>
+                        <a href="#">پر فروش ترین ها 🔥</a>
+                    </li>
+                    <li>
+                        <a href="#">شگفتانه ⏱</a>
+                    </li>
+                    <li>
+                        <a href="#">دسته بندی محصولات ☰</a>
+                        <div class="uk-width-1-2@s uk-width-2-5@m uk-navbar-dropdown" dir="rtl">
                             <ul class="uk-nav-default" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                    <a href="#">🌷 بهارانه<span uk-nav-parent-icon></span></a>
                                     <ul class="uk-nav-sub mx-3">
-                                        <li><a href="#">Sub item</a></li>
                                         <li>
-                                            <a href="#">Sub item</a>
                                             <ul class="uk-nav-default" uk-nav>
                                                 <li class="uk-parent">
                                                     <a href="#">Parent <span uk-nav-parent-icon></span></a>
@@ -100,10 +124,144 @@
                                     </ul>
                                 </li>
                                 <li class="uk-parent">
-                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                    <a href="#">☀️ تابستانه<span uk-nav-parent-icon></span></a>
                                     <ul class="uk-nav-sub mx-3">
-                                        <li><a href="#">Sub item</a></li>
-                                        <li><a href="#">Sub item</a></li>
+                                        <li>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">🍁 پاییزانه<span uk-nav-parent-icon></span></a>
+                                    <ul class="uk-nav-sub mx-3">
+                                        <li>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="#">❄️ زمستانه<span uk-nav-parent-icon></span></a>
+                                    <ul class="uk-nav-sub mx-3">
+                                        <li>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="uk-nav-default" uk-nav>
+                                                <li class="uk-parent">
+                                                    <a href="#">Parent <span uk-nav-parent-icon></span></a>
+                                                    <ul class="uk-nav-sub mx-3">
+                                                        <li>
+                                                            <ul>
+                                                                <li><a href="#">Sub item</a></li>
+                                                                <li><a href="#">Sub item</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -120,10 +278,55 @@
 {% block content %}
 
 {% endblock %}
-{% block script_refrence %}
+<div class="uk-section uk-section-muted">
+    <div class="d-flex align-items-end justify-content-between">
+        <p><a id="target" class="uk-button uk-button-primary mx-4" href="" uk-scroll="">بازگشت به بالا</a></p>
+        <div>
+            Test shop
+            <img class="arm mx-4" src="../static/images/shop_icon.png" alt="tecnolife">
+        </div>
+    </div>
+    <div class="uk-container my-4" dir="rtl">
+        <div class="d-flex justify-content-around align-items-start">
+            <div>
+                <p>راهنما</p>
+                <ul class="uk-nav uk-nav-default d-inline-block justify-content-evenly">
+                    <li class="footer-li-part"><a href="#">نحوه ثبت سفارش</a></li>
+                    <li class="footer-li-part"><a href="#">مدیریت حساب کار بری</a></li>
+                    <li class="footer-li-part"><a href="#">شیوه های پرداخت</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>ارتباط با ما</p>
+                <ul class="uk-nav uk-nav-default d-inline-block justify-content-evenly">
+                    <li class="footer-li-part"><a href="#">تعهدات ما</a></li>
+                    <li class="footer-li-part"><a href="#">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>خدمات مشتریان</p>
+                <ul class="uk-nav uk-nav-default d-inline-block justify-content-evenly">
+                    <li class="footer-li-part"><a href="#">پاسخ به پرسش‌های متداول</a></li>
+                    <li class="footer-li-part"><a href="#">رویه‌های بازگرداندن کالا</a></li>
+                    <li class="footer-li-part"><a href="#">حریم خصوصی</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% block js_refrence %}
 
 {% endblock %}
 
+
+{#<a class="uk-button uk-button-default uk-margin-small-right" href="#modal-center" uk-toggle>Open</a>#}
+{##}
+{#<div id="modal-center" class="uk-flex-top" uk-modal>#}
+{#    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">#}
+{#        <button class="uk-modal-close-default" type="button" uk-close></button>#}
+{#        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>#}
+{#    </div>#}
+{#</div>#}
 <script src="../static/js/bootstrap.min.js"></script>
 <script src="../static/js/uikit.js"></script>
 <script src="../static/js/uikit-icons.js"></script>
